@@ -218,7 +218,6 @@ begin
       ADOConnection1.GetTableNames(ListBox1.Items, False);
       bbDados.Enabled := False;
    except
-      MessageDlg('Verify if the file exists and if it needs password !', mtError, mbOKCancel, 0);
    end;
 end;
 
@@ -372,7 +371,7 @@ var
 begin
    try
       Result := False;
-      cMsg := 'Compact fail !';
+      cMsg := 'Falha na compactação !';
       if FileExists(ArqDestino) then
          DeleteFile(ArqDestino);
 
@@ -393,7 +392,7 @@ begin
                ';Mode=Share Exclusive;'+
                'Jet OLEDB:Database Password='+SenDestino);
 
-            cMsg := 'Compact done !';
+            cMsg := 'Compactação concluída';
             Result := True;
          except
             on E:Exception do

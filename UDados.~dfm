@@ -1,9 +1,9 @@
 object fmDados: TfmDados
   Left = 135
   Top = 162
-  Width = 554
-  Height = 226
-  Caption = 'Table Data'
+  Width = 544
+  Height = 218
+  Caption = 'Dados da Tabela'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
